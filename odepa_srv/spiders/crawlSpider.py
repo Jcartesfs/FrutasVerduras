@@ -22,11 +22,7 @@ class Walmart(CrawlSpider):
 		)
 
 	def parse_item(self, response):
-		self.logger.info('Hi, this is an item page! %s', response.url)
-		#sela = Selector(response)
-		print "PRUEBAAAAAAAAAAAAAAAAAAAAAAAAA"
-		print response.url
-        #verdurasfrutas = response.xpath('//[@id="cajaResultado"]/div/div[2]/div[1]/div/div[2]/div/a/p')
-        #print "Prueba"
-        #print verdurasfrutas
-         #//*[@id="cajaResultado"]/div/div[2]/div[1]/div/div[2]/div/a/p
+		self.logger.info('Pagina numero %s', response.url)
+		#sel = Selector(response)
+		#verdurasfrutas = response.xpath('//[@id="cajaResultado"]/div/div[2]/div[1]/div/div[2]/div/a/p')
+		#//*[@id="cajaResultado"]/div/div[2]/div[1]/div/div[2]/div/a/p
